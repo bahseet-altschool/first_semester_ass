@@ -1,0 +1,137 @@
+:root{
+    --alt-1:Alt__;
+}
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing:antialiased;
+    /* line-height: calc(1em + 0.5rem); */
+}
+
+img, picture,video, canvas, svg{
+    display:block;
+    max-width: 100%;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    overflow-wrap: break-word;
+}
+
+body{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+header nav a{
+    text-decoration: none;
+}
+h3{
+        text-align: right;
+        >a{
+            color: blue;
+        }
+    }
+main>p{
+    margin-bottom: 15px;
+}
+    /* adding grid or flex to the form */
+.grid{
+    display: inline-grid;
+    margin-right: 2%;
+    grid-auto-columns: 300px;
+    /* gap: 5px; */
+    margin-bottom: 1%;
+    /* column-gap: 20px; */
+}
+/* .flex{
+    flex-direction: row;
+} */
+
+input,select{
+    min-width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8080800f;
+}
+#channel,#submit{
+    min-width: 300px;
+    max-width: 632px;
+    width: 100%;
+}
+#submit{
+    height: 50px;
+    color: white;
+    background-color: #5100ffb3;
+    border: none;
+    border-radius: 5px;
+}
+
+#home-btn{
+    background: none;
+    border: none;
+}
+p{
+    color: #0c0b0b94;
+}
+button>a,p>a{
+    color: blue;
+    text-decoration: none;
+}
+form>p{
+    margin-top: 25px;
+}
+input:hover,select:hover{
+    border: 0.1px solid blue;
+}
+#submit:hover{
+    background: #530cebcf;
+}
+
+nav>a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    h3{
+        /* text-transform: var(--alt-1); */
+        /* text-transform: var(--alt-1); */
+        text-align: left;
+    }
+    #channel,#submit{
+        width: 300px;
+    }
+    .grid{
+        display: grid;
+    }
+    p{
+        width: 300px;
+    }
+    /* h3::{
+        content: "AltSchool__";
+    } */
+    
+}
